@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="script/script.js" async></script>
+</head>
+
+<body>
+    <div class="container">
+        <div id="photos" class="photos"></div>
+
+        <div id="pages" class="pages"></div>
+
+        <div id="bgShade" class="bg__shade"></div>
+
+        <div id="photoBig" class="photo__big"></div>
+    </div>
+
+    <script id="photosTemplate" type="text/template">
+        <img data-id="{{id}}" class="gallery__item"  src="{{url}}" alt="{{title}}">
+    </script>
+    
+    <script id="pagesTemplate" type="text/template">
+        <div class="pages__item" data-page="{{pageId}}">{{numberPage}}</div>
+    </script>
+
+    <script id="photoBigTemplate" type="text/template">
+        <img data-id="{{id}}" class="photo__item"  src="{{urlBig}}" alt="{{title}}">
+    </script>
+</body>
+
+</html>
